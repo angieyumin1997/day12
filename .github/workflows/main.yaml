@@ -1,5 +1,7 @@
 name: Compile, test, deploy
 on: ["push"]
+env:
+  GIPHY_API_KEY: ${{secrets.giphy_api_key}}
 jobs:
   step1:
     runs-on: ubuntu-latest
@@ -11,7 +13,7 @@ jobs:
       width: 
         java-version: '17'
         distribution: 'temurin'
-    - name: Set uo Mavem
+    - name: Set uo Maven
       uses: stCarolas/setup-maven@v4.3
       width:
         maven-version: '3.8.4'
