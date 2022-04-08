@@ -38,7 +38,7 @@ jobs:
         secret_key: ${{secrets.secret_key}}
         space_name: yumin
         space_region: sgp1
-        source: target/site/jacoco
-        out_dir: coverage/${{github.event.repository.name}}/report
+        source: target/site/jacoco/
+        out_dir: coverage/${{github.event.repository.name}}
       
     
