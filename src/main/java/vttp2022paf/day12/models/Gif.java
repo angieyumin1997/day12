@@ -19,7 +19,6 @@ public class Gif {
         this.name = name;
     }
     
-
     public static Gif create(JsonObject o){
         Gif gif = new Gif();
         gif.name = o.getString("title");
